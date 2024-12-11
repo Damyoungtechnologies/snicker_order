@@ -1,0 +1,13 @@
+.hero{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left_hero, .right_hero{
+    flex: 1;
+}
+.right_hero{
+    display: flex;
+}

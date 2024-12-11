@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    width: 90%;
+    padding: 20px 0px;
+    border-bottom: 1px solid grey;
+    margin: auto;
+    justify-content: space-between;
+}
+/* This is left side of the header */
+.header .header_link1{
+    display: flex;
+    gap: 1rem;
+    align-items: center;    
+}
+.header .header_link1 ul{
+    display: flex;
+}
+.header  .header_link1 ul li{
+    margin: 0px 15px;
+    list-style: none;
+}
+.header .header_link1 a{
+    text-decoration-line: none;
+    color: grey;
+    font-size: .8rem;
+}
+/* This is the right side of the header */
+.header .header_link2{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.header .header_link2 img{
+    width: 20px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+.header .header_link2 .cart{
+    color: grey; 
+    font-size: .4rem;   
+}

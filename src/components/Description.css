@@ -1,0 +1,64 @@
+.describe{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: center;
+    width: 80%;
+}
+h5, p{
+    color: grey;
+    text-align: justify;
+}
+.oldPrice{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 10px 0px;
+}
+.oldPrice .discount{
+    background: black;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.newPrice{
+    color: grey;
+    font-weight: bolder;
+}
+/* This is the style for the button */
+.click button:first-child, .click button:last-child{
+    color: orange;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.click button{
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+
+}
+.click button:first-child{
+    border-radius: 5px 0px 0px 5px;
+}
+.click button:last-child{
+    border-radius: 0px 5px 5px 0px;
+}
+.actionButton{
+    margin-top: 20px;
+    display: flex;
+    gap: 1rem;
+}
+.actionButton .carter{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 0px 30px;
+    background: rgb(255, 94, 0);
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+}
+.actionButton .carter svg{
+    width: 1rem;
+}

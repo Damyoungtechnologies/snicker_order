@@ -1,0 +1,40 @@
+.picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.main_picture{
+    box-sizing: content-box;
+    width: 60%;
+    height: 50vh;
+    overflow: hidden;
+    object-fit: contain;
+    align-items: flex-start;
+}
+.main_picture img{
+    width: 90%;
+    height: 50vh;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    
+}
+.picture_set{
+    display: flex;
+    gap: .5rem;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-end;
+}
+.picture_set img{
+    width: 15%;
+    height: 60px;
+    border-radius: 10px;
+}
+/* .picture_set img:active{
+    border: 3px solid orange;
+    opacity: .5
+} */
