@@ -4,36 +4,36 @@ import {snicker1, snicker2, snicker3, snicker4} from "../Assets"
 const Product = () => {
   const images = [
     {
-      id: 1,
-      img: snicker1
+      key: 1,
+      img: snicker1,
     }, 
     {
-      id: 2,
-      img: snicker2
+      key: 2,
+      img: snicker2,
     }, 
     {
-      id: 3,
-      img: snicker3
+      key: 3,
+      img: snicker3,
     }, 
     {
-      id: 4,
-      img: snicker4
+      key: 4,
+      img: snicker4,
     }
   ]
 
   // The section below is the state hook for the image swap
-  const[image, setImage] = useState(images)
+  const[selectedimage, setselectedImage] = useState(snicker1)
   const handleImageDisplay = (event) =>{
-    setImage(event.target.src)
+    setselectedImage(event.target.src)
   }
   return (
     <div className='picture'>
       <div className="main_picture">
-        <img src={image} alt="Snickers slideshow" />
+        <img src={selectedimage} alt="Snickers slideshow" />
       </div>
       <div className="picture_set">
         {images.map((image) => {
-          return <img src={image.img} onClick={handleImageDisplay} alt=''/>
+          return <img key={image.key} src={image.img} onClick={handleImageDisplay} className={`thumbnail ${selectedimage === image.img ? "Selected":""}`} alt='Product'/>
         })}
       </div>
     </div>

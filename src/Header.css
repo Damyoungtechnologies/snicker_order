@@ -40,3 +40,91 @@
     color: grey; 
     font-size: .4rem;   
 }
+.menu svg{
+    width: 20px;
+    height: 20px;
+    margin-right: -10px;
+}
+.menu .show, .menu .hide{
+    display: none;
+    /* vertical-align: bottom; */
+    margin-top: 10px;
+}
+.mobile_dropdown{
+    display: none;
+}
+/* Below is the styling for addToCount notification */
+.noteIcon{
+    background: rgb(255, 94, 0);
+    color: black;
+    font-size: .6rem;
+    font-weight: bold;
+    vertical-align: top;
+    padding: 3px 5px;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 665px){
+    .header .header_link1 ul{
+        display: none;
+    }
+    .menu .show, .menu .hide{
+        display: block;
+    }
+    .mobile_dropdown{
+        display: block;
+        background-color: black;
+        width: 90%;
+        margin: auto;
+        transition: ease-out 1s;
+        /* This is for the animation dropdown */
+        -webkit-animation: scale-up-tl 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-tl 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    /* This is the keyframe for the animation */
+
+ @-webkit-keyframes scale-up-tl {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
+  @keyframes scale-up-tl {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
+  
+  
+    .mobile_dropdown li{
+        list-style: none;
+        padding: 5px;
+        margin-left: -40px;
+    }
+    .mobile_dropdown li:hover{
+        background: orange;
+    }
+    .mobile_dropdown li:hover a{
+        color: white;
+    }
+    .mobile_dropdown li a{
+        text-decoration: none;
+        color: rgb(209,208,216);
+    }
+}

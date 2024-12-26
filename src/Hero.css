@@ -3,11 +3,27 @@
     margin: auto;
     margin-top: 30px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 .left_hero, .right_hero{
     flex: 1;
 }
-.right_hero{
-    display: flex;
+@media only screen and (max-width: 665px){
+    .hero{
+        flex-direction: column
+    }
+    .left_hero{
+        /* background: red; */
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+    .right_hero{
+        display: flex;
+        justify-content: center;        
+        width: 80%;
+        margin: auto;
+    }
 }

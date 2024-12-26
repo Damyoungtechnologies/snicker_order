@@ -1,13 +1,19 @@
-import React from 'react'
-import "./Hero.css"
-import {Product, Description} from "./components"
-const Hero = () => {
-  return (
-    <div className='hero'>
-        <div className='left_hero'><Product /></div>
-        <div className='right_hero'><Description /></div>
-    </div>
-  )
-}
+import React from 'react';
+import './Hero.css';
+import { Product, Description } from './components';
 
-export default Hero
+const Hero = ({ onAddToCart }) => {
+  return (
+    <div className="hero">
+      <div className="left_hero">
+        <Product />
+      </div>
+      {/* Pass the cart update function to Description */}
+      <div className="right_hero">
+        <Description onAddToCart={onAddToCart} />
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
